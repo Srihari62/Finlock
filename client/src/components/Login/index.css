@@ -1,0 +1,162 @@
+
+.para {
+    top: 469px;
+    left: 792px;
+    width: 336px;
+    height: 54px;
+    font-family: 'Open Sans';
+    text-align: center;
+    font: normal normal normal 18px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #0B3558;
+    opacity: 1;
+    }
+
+    
+    .link {
+        text-align: right;
+        width: 500px;
+    }
+    
+    .form-container {
+        width: 300px;
+    }
+    
+    .inputBox {
+        width: 500px;
+        position: relative;
+    }
+    
+    .inputBox input {
+        width: 100%;
+       height: 55px;
+       padding: 10px;
+       background: #FFFFFF 0% 0% no-repeat padding-box;
+       border: 2px solid #A2A2A2;
+       border-radius: 4px;
+       opacity: 1;
+       outline: none;
+       color: #0B3558;
+       font-size: 20px;
+       transition: 0.5s;
+    }
+    .inputBox span {
+        position: absolute;
+        margin-top: -65px;
+       left: 0;
+       padding: 18px;
+       pointer-events: none;
+       font-size: 20px;
+       color: #A2A2A2;
+       transition: 0.5s;
+    }
+    
+    
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span {
+       color: #003FB9;
+       transform: translateX(10px) translateY(-6px);
+       font-size: 16px;
+       padding: 0 10px;
+       background: #fff;
+    }
+    
+    .inputBox input:valid ,
+    .inputBox input:focus {
+       border: 2px solid #003FB9;
+    }
+
+    .message {
+        font-family: 'Courier New', Courier, monospace;
+        color: brown;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+
+
+
+
+    .button {
+        width: 500px;
+    height: 50px;
+    background: #003FB9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 600 24px/33px Lucida Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+        position: relative;
+        padding: 8px 16px;
+        
+        cursor: pointer;
+      }
+      
+      .button:active {
+        background: #003FB9;
+      }
+      
+      .button__text {
+        font: bold 20px "Quicksand", san-serif;
+        color: #ffffff;
+        transition: all 0.2s;
+      }
+      
+      .button--loading .button__text {
+        visibility: hidden;
+        opacity: 0;
+      }
+      
+      .button--loading::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 4px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s ease infinite;
+      }
+      
+      @keyframes button-loading-spinner {
+        from {
+          transform: rotate(0turn);
+        }
+      
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+
+      @media (max-width:768px) {
+        .inputBox {
+            width: 400px;
+        }
+        .link {
+            width: 400px;
+        }
+        .button {
+          width: 400px;
+        }
+    }
+    
+    @media (max-width:576px) {
+        .inputBox {
+            width: 300px;
+        }
+        .link {
+            width: 300px;
+        }
+        .button {
+          width: 300px;
+        }
+    }
+      

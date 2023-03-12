@@ -1,0 +1,43 @@
+.welcome {
+color: #0B3558;
+top: 396px;
+left: 844px;
+width: 200px;
+height: 65px;
+text-align: left;
+font: normal normal bold 48px/65px Lucida Sans;
+letter-spacing: 0px;
+opacity: 1;
+margin-right: 20px;
+}
+
+.img-container {
+top: 180px;
+left: 860px;
+width: 200px;
+height: 200px;
+background: #EFEFEF 0% 0% no-repeat padding-box;
+opacity: 1;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-icon {
+top: 230px;
+left: 910px;
+width: 100px;
+height: 100px;
+/* UI Properties */
+background: transparent 0% 0% no-repeat padding-box;
+opacity: 1;
+}
